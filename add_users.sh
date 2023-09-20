@@ -1,8 +1,9 @@
 #!/bin/bash
 
-userlist="/mnt/eufs003/student_lnxhome01/user_list"
+path="/mnt/eufs003/student_lnxhome01"
 symlink="/uolstore/home/student_lnxhome01"
 log_file="/var/log/script.log"
+userlist="~/cs_new_student/user_list"
 
 # Initialize the log file
 echo "Script started at $(date)" > "$log_file"
