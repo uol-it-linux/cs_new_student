@@ -38,7 +38,7 @@ for i in "${!user_list[@]}"; do
    chmod 700 "$source_dir"
    
    # Create the symbolic link
-   ln -s "/home/csunix/${user_list[$i]}" "$symlink/${user_list[$i]}"
+   ln -s "$symlink/${user_list[$i]}" "/home/csunix/${user_list[$i]}"
    if [ $? -ne 0 ]; then
        echo "Error: Failed to create symbolic link for '${user_list[$i]}'." | tee -a "$log_file"
        # You can choose to exit or continue with the loop based on your preference
