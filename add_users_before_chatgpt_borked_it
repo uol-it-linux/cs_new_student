@@ -1,6 +1,6 @@
 /bin/sh
 
-userlist="/mnt/eufs003/student_lnxhome01"
+path="/mnt/eufs003/student_lnxhome01"
 symlink="/uolstore/home/student_lnxhome01"
 
 readarray -t user_list < ~/cs_new_student/user_list
