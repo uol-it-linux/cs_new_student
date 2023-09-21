@@ -4,6 +4,7 @@ path="/mnt/eufs003/student_lnxhome01"
 symlink="/uolstore/home/student_lnxhome01"
 log_file="/var/log/script.log"
 userlist="~/cs_new_student/user_list"
+testlist="~/cs_new_student/test_list"
 
 # Initialize the log file
 echo "Script started at $(date)" > "$log_file"
@@ -14,7 +15,7 @@ if [ ! -f "$userlist" ]; then
     exit 1
 fi
 
-readarray -t user_list < "$userlist"
+readarray -t user_list < "$testlist"
 
 for i in "${!user_list[@]}"; do
    source_dir="$path/${user_list[$i]}"
