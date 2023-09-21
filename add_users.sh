@@ -22,7 +22,7 @@ for i in "${!user_list[@]}"; do
    
    # Check if the source_dir already exists
    if [ -d "$source_dir" ]; then
-       echo "Warning: Directory '$source_dir' already exists. Skipping." | tee -a "$log_file"
+       echo "Warning: Skipped existing directory: '$source_dir'" | tee -a "$log_file"
        continue  # Skip to the next iteration of the loop
    fi
    
