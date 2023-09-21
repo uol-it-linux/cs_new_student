@@ -4,7 +4,7 @@ path="/mnt/eufs003/student_lnxhome01"
 symlink="/uolstore/home/student_lnxhome01"
 log_file="/var/log/script.log"
 userlist="/root/cs_new_student/user_list"
-testlist="~/root/cs_new_student/test_list"
+testlist="/root/cs_new_student/test_list"
 
 # Initialize the log file
 echo "Script started at $(date)" > "$log_file"
