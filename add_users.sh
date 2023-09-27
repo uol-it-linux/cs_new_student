@@ -39,6 +39,7 @@ for i in "${!user_list[@]}"; do
    
    # Create the symbolic link
    ln -s "$symlink/${user_list[$i]}" "/home/csunix/${user_list[$i]}"
+   echo " Created: '${user_list[$i]}'" | tee -a "$log_file"
    if [ $? -ne 0 ]; then
        echo "Error: Failed to create symbolic link for '${user_list[$i]}'." | tee -a "$log_file"
        # You can choose to exit or continue with the loop based on your preference
